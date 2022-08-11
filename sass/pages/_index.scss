@@ -1,6 +1,7 @@
 .section-cards {
-    background-color: #f1f2f3;
+    background-color: $color2;
     padding: 1em;
+    background-image: url(../../img/fondos/fondo-section-cards.png);
 }
 
 .cards-container {
@@ -8,6 +9,7 @@
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
+    min-width: 180px;
 
     @media (min-width: 1200px) {
         & {
