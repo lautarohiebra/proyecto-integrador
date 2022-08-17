@@ -4,6 +4,46 @@
     background-image: url(../../img/fondos/fondo-section-cards.png);
 }
 
+
+.section-cards__header{
+    & h1{
+        color: $color1;
+        background-color: $color5;
+        width: 48%;
+        padding: 5px 10px;
+        border-radius: 15px 15px 0 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+        min-width: 368px;
+        max-width: 368px;
+    }
+
+    & p{
+        color: $color2;
+        background-color: $color3;
+        width: 48%;
+        padding: 5px 10px;
+        border-radius:0 0 15px 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+        min-width: 368px;
+        max-width: 368px;
+    }
+
+    @media (max-width:425px){
+        & h1, & p{
+            max-width: 250px;
+            min-width: 250px;
+            width: 50%;
+        }
+        
+        & h1{
+            font-size: 16px;
+        }
+        & p{
+            font-size: 14px;
+        }
+    }
+}
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
