@@ -1,0 +1,108 @@
+.nosotros-h1{
+    color: #F2F4FF;
+    background-color: #8075FF;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+    margin-bottom: -50px;
+    z-index: 150;
+}
+
+.nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: $color3;
+    row-gap: 5px;
+    z-index: 100;
+
+    &__img1 { 
+        grid-area: 1 / 1 / 2 / 7;
+        background-color: $color5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../img/imagenes-nosotros/john-schnobrich-FlPc9_VocJ4-unsplash\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: -50px 0;
+    }
+
+    &__parrafo1 { 
+        grid-area: 1 / 3 / 2 / 7;
+        height: fit-content;
+        background-color: $color2;
+        padding: 10px 15px;
+        border-radius: 0 0 0 15px;
+        padding: 15px;
+        z-index: 100;
+
+        & h2{
+            color: $color4;
+        }
+
+        & p{
+            color: $color3;
+            font-size: 16px;
+        }
+     }
+
+    &__card1 { 
+        grid-area: 2 / 1 / 3 / 3;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-items: center;
+        background-color: $color2;
+        padding: 5px 10px;
+     }
+    
+    &__card2 { 
+        grid-area: 2 / 3 / 3 / 5;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-items: center;
+        background-color: $color1;
+        padding: 5px 10px;
+     }
+
+    &__card3 { 
+        grid-area: 2 / 5 / 3 / 7;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-items: center;
+        background-color: $color2;
+        padding: 5px 10px;
+     }
+
+    &__parrafo2 { 
+        grid-area: 3 / 1 / 4 / 5;
+        padding: 10px;
+        background-color: $color2;
+        height: 100%;
+        border-radius: 0 15px 0 0;
+        opacity: .8;
+
+     } 
+
+    &__img2{ 
+        grid-area: 3 / 5 / 4 / 7;
+
+     }
+    }
+
+    @media(max-width: 768px){
+        .nosotros-grid {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+    
+    }
